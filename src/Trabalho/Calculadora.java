@@ -46,9 +46,9 @@ public class Calculadora {
     }
 
     public void entrada() {
-        System.out.println("Digite um número");
+        System.out.println("Digite o Primeiro numero: ");
         v1 = en.nextInt();
-        System.out.println("Digite o segundo número");
+        System.out.println("Digite o Segundo número");
         v2 = en.nextInt();
     }
 }
