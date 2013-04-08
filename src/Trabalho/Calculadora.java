@@ -1,13 +1,25 @@
 package Trabalho;
 
-import br.com.unisep.luiz.MyExcepiton;
 import br.com.unisep.luiz.MyRunTimeException;
 import java.util.Scanner;
 
 public class Calculadora {
 
-    double v1, v2;
+   protected double v1, v2;
+
+    @Override
+    public String toString() {
+        return "Calculadora{" + "v1=" + v1 + ", v2=" + v2 + '}';
+    }
+
+    public Calculadora(double v1, double v2) {
+        this.v1 = v1;
+        this.v2 = v2;
+    }
     Scanner en = new Scanner(System.in);
+
+    public Calculadora() {
+    }
 
     public double soma() {
         return v1 + v2;

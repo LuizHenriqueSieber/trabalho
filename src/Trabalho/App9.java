@@ -8,7 +8,7 @@ public class App9 {
 
     public static void main(String[] args) {
         @SuppressWarnings("empty-statement")
-        int op = 1;
+        int op = 0;
 
         String escolha;
             Scanner en = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class App9 {
                             set.invoke(obj, ca.v2);
 
                             Method get = c.getDeclaredMethod("soma");
-                            get.invoke(obj);
+                            get.invoke(obj);          
 
                             System.out.println("O valor é: "+get.invoke(obj));                           
                         } catch (Exception ex) {
